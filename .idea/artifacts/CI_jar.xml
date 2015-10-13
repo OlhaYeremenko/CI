@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="CI:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/CI_jar</output-path>
+    <root id="archive" name="CI.jar">
+      <element id="module-output" name="CI" />
+    </root>
+  </artifact>
+</component>
