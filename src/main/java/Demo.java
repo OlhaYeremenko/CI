@@ -14,7 +14,7 @@ public class Demo {
 
         URL website = new URL(Constants.URL);
         ReadableByteChannel rbc = Channels.newChannel(website.openStream());
-        FileOutputStream fos = new FileOutputStream("File.txt");
+        FileOutputStream fos = new FileOutputStream(Constants.FILE);
         fos.getChannel().transferFrom(rbc, 0, Long.MAX_VALUE);
         System.out.println("File created");
     }
