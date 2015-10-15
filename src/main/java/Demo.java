@@ -12,7 +12,7 @@ public class Demo {
 
     public static void main(String args[]) throws IOException {
 
-        URL website = new URL("https://dl.dropboxusercontent.com/u/98396761/NewTxt.txt");
+        URL website = new URL(Constants.URL);
         ReadableByteChannel rbc = Channels.newChannel(website.openStream());
         FileOutputStream fos = new FileOutputStream("File.txt");
         fos.getChannel().transferFrom(rbc, 0, Long.MAX_VALUE);
